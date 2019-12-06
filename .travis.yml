@@ -10,8 +10,6 @@ services:
   - postgresql
 
 script:
-  #- postgres -V
-  #- locate bin/postgres
-  - systemctl status postgresql
+  - postgres -V
   
   
