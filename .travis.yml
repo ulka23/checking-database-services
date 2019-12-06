@@ -7,16 +7,6 @@ arch:
   - s390x
 
 services:
-  - riak
-  - rabbitmq
-  - memcached
-  - mysql
   - postgresql
-  - mongodb
-  - couchdb
-  - rabbitmq
-  - redis-server
-  - cassandra
-  - neo4j
-  - elasticsearch
+
   
