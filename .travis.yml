@@ -1,4 +1,4 @@
-language: go 
+language: generic 
 
 arch:
   - amd64
@@ -9,4 +9,6 @@ arch:
 services:
   - postgresql
 
+script:
+  - postgres --version
   
