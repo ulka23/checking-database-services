@@ -1,4 +1,4 @@
-language: generic 
+language: go 
 
 arch:
   - amd64
