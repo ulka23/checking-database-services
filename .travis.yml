@@ -10,5 +10,7 @@ services:
   - postgresql
 
 script:
-  - postgres -V
+  #- postgres -V
+  - locate bin/postgres
+  
   
