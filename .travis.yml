@@ -1,0 +1,22 @@
+language: generic 
+
+arch:
+  - amd64
+  - arm64
+  - ppc64le
+  - s390x
+
+services:
+  - riak
+  - rabbitmq
+  - memcached
+  - mysql
+  - postgresql
+  - mongodb
+  - couchdb
+  - rabbitmq
+  - redis-server
+  - cassandra
+  - neo4j
+  - elasticsearch
+  
