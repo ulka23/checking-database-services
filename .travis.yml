@@ -10,6 +10,7 @@ services:
   - postgresql
 
 script:
+  - ps | grep postgres
   - postgres -V
   
   
