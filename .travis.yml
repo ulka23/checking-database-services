@@ -10,5 +10,5 @@ services:
   - postgresql
 
 script:
-  - postgres --version
+  - postgres -V
   
