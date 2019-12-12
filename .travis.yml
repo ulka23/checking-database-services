@@ -1,15 +1,21 @@
-language: go 
+#language: go 
 
 arch:
-  - amd64
-  - arm64
+  #- amd64
+  #- arm64
   - ppc64le
-  - s390x
+  #- s390x
 
-dist: bionic 
+dist: xenial
 
-services:
-  - postgresql
+addons:
+  postgresql: "10"
+  apt:
+    packages:
+    - postgresql-10
+    - postgresql-client-10
+#services:
+#  - postgresql
 
 script:
   - psql -V
