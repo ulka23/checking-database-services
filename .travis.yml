@@ -19,5 +19,7 @@ addons:
 
 script:
   - psql -V
+  - dpkg -l | grep postgre
+  - ps aux | grep postgre
   
   
