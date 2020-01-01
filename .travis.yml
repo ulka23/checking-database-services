@@ -23,4 +23,7 @@ script:
   - dpkg -l | grep postgre
   - ps aux | grep postgre
   
-  
+before_install:
+  - sudo systemctl start postgresql@10-main
+  - psql -c 'create database travis_ci_test;' -U postgres
+  - mysql -e 'CREATE DATABASE myapp_test;'
