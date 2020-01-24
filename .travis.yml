@@ -29,6 +29,5 @@ script:
   - psql -V
   - dpkg -l | grep postgre
   - ps aux | grep postgre
-  - sudo systemctl status postgresql
   - psql -c 'create database travis_ci_test;' -U postgres
   #- mysql -e 'CREATE DATABASE myapp_test;'
