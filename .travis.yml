@@ -7,14 +7,6 @@ matrix:
     - env: ENV=xenial
       dist: xenial
       arch: ppc64le
-#arch:
-  #- amd64
-  #- arm64
- # - ppc64le
-  #- s390x
-
-#dist: xenial
-#dist: bionic
 
 #addons:
 #  postgresql: "10"
@@ -29,5 +21,5 @@ script:
   - psql -V
   - dpkg -l | grep postgre
   - ps aux | grep postgre
-  - psql -c 'create database travis_ci_test;' -U postgres
+  #- psql -c 'create database travis_ci_test;' -U postgres
   #- mysql -e 'CREATE DATABASE myapp_test;'
