@@ -1,13 +1,20 @@
 #language: go 
-
-arch:
+matrix:
+  include:
+    - env: ENV=bionic
+      dist: bionic
+      arch: ppc64le
+    - env: ENV=xenial
+      dist: xenial
+      arch: ppc64le
+#arch:
   #- amd64
   #- arm64
-  - ppc64le
+ # - ppc64le
   #- s390x
 
 #dist: xenial
-dist: bionic
+#dist: bionic
 
 #addons:
 #  postgresql: "10"
@@ -24,4 +31,4 @@ script:
   - ps aux | grep postgre
   - sudo systemctl start postgresql@10-main
   - psql -c 'create database travis_ci_test;' -U postgres
-  - mysql -e 'CREATE DATABASE myapp_test;'
+  #- mysql -e 'CREATE DATABASE myapp_test;'
