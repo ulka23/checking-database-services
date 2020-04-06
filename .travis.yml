@@ -7,6 +7,9 @@ matrix:
     - env: ENV=xenial
       dist: xenial
       arch: ppc64le
+    - env: ENV=xenial_legacy_power_queue
+      dist: xenial
+      os: linux-ppc64le
 
 #addons:
 #  postgresql: "10"
