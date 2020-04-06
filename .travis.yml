@@ -1,22 +1,22 @@
 #language: go 
 matrix:
   include:
-    - env: ENV=bionic
-      dist: bionic
-      arch: ppc64le
-    - env: ENV=xenial
-      dist: xenial
-      arch: ppc64le
+    #- env: ENV=bionic
+    #  dist: bionic
+    #  arch: ppc64le
+    #- env: ENV=xenial
+    #  dist: xenial
+    #  arch: ppc64le
     - env: ENV=xenial_legacy_power_queue
       dist: xenial
       os: linux-ppc64le
 
-#addons:
-#  postgresql: "10"
-#  apt:
-#    packages:
-#    - postgresql-10
-#    - postgresql-client-10
+addons:
+  postgresql: "10"
+  apt:
+    packages:
+    - postgresql-10
+    - postgresql-client-10
 services:
   - postgresql
 
